@@ -13,8 +13,20 @@ Options:
     -z               直达
 
 Example:
+
     tickets 南京 北京 2016-07-01
     tickets -dg 南京 北京 2016-07-01
+    python3 tickets.py 上海 北京 2016-07-01
+    output:{ '-d': False,
+             '-g': False,
+             '-k': False,
+             '-t': False,
+             '-z': False,
+             '<date>': '2016-07-01',
+             '<from>': '上海',
+             '<to>': '北京'}
+
+
 """
 from docopt import docopt
 
